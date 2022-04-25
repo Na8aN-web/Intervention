@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  	<!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<!-- Bootstrap JS -->
+      <script src="./assets/js/jquery-3.4.1.js"></script>
+      <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+      <script src="./assets/js/bootstrap.min.js"></script>
+  	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+       <!-- <nav id="Navbar">
+           <img src="./assets/images/logo.png" id="Navbar-logo">
+           <div id="Navbar-items">
+               <div>
+                <ul id="Navbar-lists">
+                   <a href="#"><li>HOME</li></a>
+                   <a href="#"><li>ABOUT</li></a>
+                   <a href="#"><li>CONTACT</li></a>
+                   <a href="#" class="vanish"><li>|</li></a>
+                   
+                </ul>
+               </div>
+               <div id="Navbar-contact">
+                   <p>CALL NOW FOR A CONSULT <span style="color: #5BC8AF;">XXX.XXX.XXXX</span></p>
+               </div>
+           </div>
+       </nav> -->
+       <nav class="navbar navbar-expand-lg" id="Navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../home/index.html"><img src="./assets/images/logo.png" id="Navbar-logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./assets/images/hamburger.png">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav nav-wrapper ms-auto" id="Navbar-lists">
+              <a class="nav-link active" href="../houses/index.html">HOME</a>
+              <a class="nav-link" href="../hostels/index.html">ABOUT</a>
+              <a class="nav-link" href="#">CONTACT</a>
+              <a href="#" class="nav-link" ><li class="vanish">|</li></a>
+            </div>
+            <div id="Navbar-contact">
+                <p>CALL NOW FOR A CONSULT <span style="color: #5BC8AF;">XXX.XXX.XXXX</span></p>
+            </div>
+          </div>
+        </div>
+      </nav>
+       <div id="container-box">
+           <div id="title">
+            <h1><span>GET AN</span> INTERVENTION</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+           </div>
+           <div id="form">
+                <h3>Contact Us</h3>
+                <form name="RegForm" method="post" id="formed" target="_blank" action="./thanks.html">
+                    <div id="form-grid">
+                        <div class="first-row">
+                            <!-- <div class="input-items">
+                                <input type="text" placeholder="" class="form-input" id="dom-input" name="First-Name" >
+                                <label class="form-label" id="dom-label">First Name</label>
+                            </div> -->
+                            <div class = "mytooltip7">
+                                <div class="input-items">
+                                    <input type="text" onfocus="place(event)"  placeholder="" class="form-input" id="dom-input" name="First-Name" >
+                                    <label class="form-label" onfocus="place(event)" id="dom-label">First Name</label>
+                                </div>
+                                <span class = "mytext7" id="text-error">This field can’t be empty. Please fill it in.</span>
+                             </div>
+                             <div class = "mytooltip7">
+                                <div class="input-items">
+                                    <input type="text" onfocus="place(event)"  placeholder="" class="form-input" id="dom-input1"name="Last-Name" >
+                                    <label class="form-label" id="dom-label1">Last Name</label>
+                                </div>
+                                <span class = "mytext7" id="text-error1">This field can’t be empty. Please fill it in.</span>
+                             </div>
+                        </div>
+                        <div class="first-row">
+                            <div class = "mytooltip7">
+                                <div class="input-items">
+                                    <input type="text" onfocus="place(event)" placeholder="" class="form-input" id="dom-input2" name="Email">
+                                    <label class="form-label" id="dom-label2">Business Email</label>
+                                </div>
+                                <span class = "mytext7" id="text-error2">This field can’t be empty. Please fill it in.</span>
+                             </div>
+                             <div class = "mytooltip7">
+                                <div class="input-items">
+                                    <input type="text" onfocus="place(event)" placeholder="" class="form-input" id="dom-input3" name="Company">
+                                    <label class="form-label" id="dom-label3">Company</label>
+                                </div>
+                                <span class = "mytext7" id="text-error3">This field can’t be empty. Please fill it in.</span>
+                             </div>
+                          
+                        </div>
+                            <div class="input-items">
+                                <select  class="form-inputs" >
+                                    <option value=""  disabled selected>Country</option>
+                                    <option>America</option>
+                                    <option>Germany</option>
+                                    <option>Nigeria</option>
+                                    <option>South Africa</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                       
+                    </div>
+                    <div class="input-submit">
+                        
+                    <button type="submit"><input type="image" src="./assets/images/submit.png"></button> 
+                        
+                        
+                    </div>
+                </form>
+           </div>
+           <div class="waves">
+            <div id="wave">
+            <svg width="1440" height="90" viewBox="0 0 1440 90" stroke="#F5F5F5" stroke-opacity="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M0 55.1705C310 -118.33 926 184.67 1440 55.1705V89.1704H0V55.1705Z" fill="#F5F5F5"/>
+             </svg>
+         </div>
+         <div id="wave2">
+             <svg width="1440" height="90" viewBox="0 0 1440 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 55.1705C310 -118.33 926 184.67 1440 55.1705V89.1704H0V55.1705Z" fill="#F5F5F54D"/>
+              </svg>
+          </div>
+         </div>
+       </div>
+     
+        
+       <div id="main">
+       <div id="details">
+           <img src="./assets/images/image.png" class="oldimages">
+           <img src="./assets/images/image 2.png"  class="oldimages">
+           <img src="./assets/images/image1.png"  class="oldimages">
+       </div>
+       <div id="body-text">
+        <h3><span>WE</span> UNDERSTAND</h3>
+        <div id="body-details">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <p class="v-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet.
+                <button class="detail-button">92% Success Rate </button>
+            </p>
+        </div>
+       </div>
+    </div>
+   
+      <section id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>Client Testimonials</h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                        
+                        <!-- <ul class="indicators">
+                            <li data-target="#testimonialCarousel" data-slide-to="0" class="active"><button></button></li>
+                            <li data-target="#testimonialCarousel" data-slide-to="1"><button></button></li>
+                            <li data-target="#testimonialCarousel" data-slide-to="2"><button></button></li>
+                        </ul> -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+                            <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div id="carousel-in" class="carousel-inner" role="listbox">
+                         
+                            <div class="carousel-item active">
+                                <div class="carousel-content">
+                                    <div class="client-img"><img src="./assets/images/testimonial1.png" alt="Testimonial Slider" /></div>
+                                    <div class="carousel-details">
+                                        <h3>Abbie Harvey</h3>
+                                        <p>
+                                            <i>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. There are many variations of passages of Lorem Ipsum available. Lorem Ipsum is simply dummy text of the printing and typesetting industry</i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <div class="carousel-content">
+                                    <div class="client-img"><img src="./assets/images/testimonial2.png" alt="Testimonial Slider" /></div>
+                                    <div class="carousel-details">
+                                    <h3>Jack Sparrow</h3>
+                                    <p>
+                                        <i>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. There are many variations of passages of Lorem Ipsum available. Lorem Ipsum is simply dummy text of the printing and typesetting industry</i>
+                                    </p>
+                                </div>
+                                </div>
+                            </div>
+                           
+                            <div class="carousel-item">
+                                <div class="carousel-content">
+                                    <div class="client-img"><img src="./assets/images/testimonial3.png" alt="Testimonial Slider" /></div>
+                                    <div class="carousel-details">
+                                        <h3>Elizabeth Bishop</h3>
+                                        <p>
+                                            <i>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. There are many variations of passages of Lorem Ipsum available. Lorem Ipsum is simply dummy text of the printing and typesetting industry</i>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                          
+                            <a class="carousel-control-prev " href="#testimonialCarousel" role="button" data-slide="prev" id="next-van">
+                                <img src="./assets/images/left.png" style="margin-right: 150px;">
+                            </a>
+                            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next" id="prev-van">
+                                <img src="./assets/images/right.png"  style="margin-left: 150px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <div id="body-text">
+        <h3 class="organize"><span>WE</span> CAN ORGANIZE EVERYTHING</h3>
+        <div id="body-details2">
+           <div id="long-p"> <p class="padin">Lorem ipsum dolor sit amet, consectetur adipiscing consectetur adipiscing consectetur adipiscing consectetur adipiscing </p></div>
+           <div class="para-div"> <p class="padin">  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
+            <p class="padin " >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+            </p>
+        </div>
+           
+        </div>
+       </div>
+     <div id="tools">
+       <div class = "mytooltip1" onmouseover="detail(event)" onmouseout="change(event)">Needs Assesment <img src="./assets/images/mdi_info.png" class="info1">
+        <span class = "mytext1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+     </div>
+     <div class = "mytooltip2"  onmouseover="detail(event)" onmouseout="change(event)">Treatment Planning & Placement <img src="./assets/images/mdi_info.png" class="info2">
+        <span class = "mytext2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+     </div> 
+     <div class = "mytooltip3"  onmouseover="detail(event)" onmouseout="change(event)">Transportation & Logistics <img src="./assets/images/mdi_info.png" class="info3">
+        <span class = "mytext3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+     </div>
+     <div class = "mytooltip4"  onmouseover="detail(event)" onmouseout="change(event)">Insuarance Advocacy<img src="./assets/images/mdi_info.png" class="info4">
+        <span class = "mytext4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+     </div>
+     <div class = "mytooltip5"  onmouseover="detail(event)" onmouseout="change(event)">Employment Advocacy <img src="./assets/images/mdi_info.png" class="info5">
+        <span class = "mytext5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+     </div>
+     <div class = "mytooltip6"  onmouseover="detail(event)" onmouseout="change(event)">Aftercare Planning<img src="./assets/images/mdi_info.png" class="info6">
+        <span class = "mytext6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+     </div>
+    </div>
+
+    <div id="video">
+        <div id="video-info">
+            <div id="newwave">
+                <svg width="779" height="648" viewBox="0 0 779 648" fill="url(#paint0_linear_1_237)" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H742.597C655.445 274 857.597 323.5 742.597 648H0V0Z" fill="fill="url(#paint0_linear_1_237)" fill-opacity="0.2"/>
+                    </svg>
+                </div>
+            <div id="wavez">
+            <svg width="755" height="648" viewBox="0 0 755 648" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H719.719C635.252 274 831.175 323.5 719.719 648H0V0Z" fill="url(#paint0_linear_1_237)"/>
+                <defs>
+                <linearGradient id="paint0_linear_1_237" x1="377.5" y1="0" x2="377.5" y2="648" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#305D52"/>
+                <stop offset="1" stop-color="#153F38"/>
+                </linearGradient>
+                </defs>
+                <foreignobject id="flip" class="node" x="46" y="22" width="100%" height="100%">
+                
+                    <div style="padding-bottom:50px; padding-top: 50px; padding-left: 50px ">     
+                        <h4><span>WATCH</span> THE VIDEO</h4>
+                       <ul class="video-list">
+                           <li>
+                               <h3 class="video-list">Needs Assesment</h3>
+                               <p class="video-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           </li>
+                           <li>
+                               <h3 class="video-list">Insuarance Advocacy</h3>
+                               <p class="video-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                           </li>
+                           <li>
+                               <h3 class="video-list">Treatment Planning & Placement</h3>
+                               <p class="video-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                           </li>
+                       </ul> </div>                
+            </foreignobject>
+                </svg>
+            </div>
+            <div id="currentwave2">
+            <svg width="100%" height="100%" viewBox="0 0 768 673" fill="url(#paint0_linear_1_430)" xmlns="http://www.w3.org/2000/svg">
+                <path d="M768 0L768 641.551C443.259 566.258 384.593 740.902 -2.80431e-05 641.551L0 -3.35703e-05L768 0Z" fill="url(#paint0_linear_1_430)" fill-opacity="0.2"/>
+                </svg>
+            </div>
+            <div id="currentwave">
+                <svg width="100%" height="100%" viewBox="0 0 768 648" fill="url(#paint0_linear_1_430)" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M768 0L768 617.719C443.259 545.223 384.593 713.38 -2.70014e-05 617.719L0 -3.35703e-05L768 0Z" fill="url(#paint0_linear_1_430)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_430" x1="397.5" y1="8.14284" x2="397.5" y2="648" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#305D52"/>
+                    <stop offset="1" stop-color="#153F38"/>
+                    </linearGradient>
+                    </defs>
+                    <foreignobject id="flip" class="node" x="46" y="22" width="100%" height="100%">
+                
+                        <div style="padding:50px;">     
+                            <h4 style="padding-right: 100px;"><span>WATCH</span> THE VIDEO</h4>
+                           <ul class="video-list">
+                               <li>
+                                   <h3 class="video-list">Needs Assesment</h3>
+                                   <p class="video-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                               </li>
+                               <li>
+                                   <h3 class="video-list">Insuarance Advocacy</h3>
+                                   <p class="video-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                               </li>
+                               <li>
+                                   <h3 class="video-list">Treatment Planning & Placement</h3>
+                                   <p class="video-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                               </li>
+                           </ul> </div>                
+                </foreignobject>
+                    </svg>
+                    
+            </div>
+                
+           
+           
+        </div>
+        
+        <div id="actual-video" style="text-align:center"> 
+            <button type="button" id="vidbutton"><img src="./assets/images/play.png"></button>
+            <video id="myvid" poster="./assets/images/video thumbnail.png">
+              <source src="./assets/images/me.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+          </div> 
+    </div>
+    <footer class="footer-below">
+        <div id="footer-caption">@2019 Get an Intervention Inc. All rights reserved.</div>
+        <div>
+                <ul id="footer-lists" >
+                   <a href="#"><li>Privacy Policy </li></a>
+                   <a href="#" style="pointer-events: none;"><li>|</li></a>
+                   <a href="#"><li>Terms of Use</li></a>
+                   <a href="#" style="pointer-events: none;"><li>|</li></a>
+                   <a href="#"><li>Site Map</li></a>
+                </ul>
+        </div>
+    </footer>
+  
+    
+    </div> 
+      <script>
+          var ppbutton = document.getElementById("vidbutton");
+ppbutton.addEventListener("click", playPause);
+myVideo = document.getElementById("myvid");
+function playPause() { 
+    if (myVideo.paused) {
+        myVideo.play();
+        myVideo.style.width ="100%";
+        myVideo.style.height ="100%";
+        }
+    else  {
+        myVideo.pause(); 
+        }
+} 
+          $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+let form = document.getElementById("formed")
+form.addEventListener("submit", (e)=>{
+    e.preventDefault()
+    let checkForm =  formVal()
+    if (checkForm){
+        window.location.href = "./thanks.html";
+    }
+})
+
+function formVal() {
+        var firstname = document.forms["RegForm"]["First-Name"].value;
+        var lastname = document.forms["RegForm"]["Last-Name"].value;
+        var email = document.forms["RegForm"]["Email"].value;
+        var company = document.forms["RegForm"]["Company"].value;
+        let error = 0;
+
+  
+        if (firstname == "") {
+            document.getElementById("dom-label").classList.add("form-label-error");
+            document.getElementById("dom-input").classList.add("form-input-error");
+            document.getElementById("text-error").style.display= "block";
+            setTimeout(()=>{
+                document.getElementById("text-error").style.display= "none";
+            }, 2000)
+            error += 1;
+            
+        }
+        else{
+            document.getElementById("dom-label").classList.remove("form-label-error");
+            document.getElementById("dom-input").classList.remove("form-input-error");
+            document.getElementById("text-error").style.display= "none";
+            setTimeout(()=>{
+                document.getElementById("text-error").style.display= "none";
+            }, 2000)
+        }
+  
+        
+        if (lastname == "") {
+            document.getElementById("dom-label1").classList.add("form-label-error");
+            document.getElementById("dom-input1").classList.add("form-input-error");
+            document.getElementById("text-error1").style.display= "block";
+            setTimeout(()=>{
+                document.getElementById("text-error1").style.display= "none";
+            }, 2000)
+            error += 1;
+        }
+  
+        
+  
+        if (email == "") {
+            document.getElementById("dom-label2").classList.add("form-label-error");
+            document.getElementById("dom-input2").classList.add("form-input-error");
+            document.getElementById("text-error2").style.display= "block";
+            setTimeout(()=>{
+                document.getElementById("text-error2").style.display= "none";
+            }, 2000)
+            error += 1;
+        }
+  
+        
+  
+       
+        if (company == "") {
+            document.getElementById("dom-label3").classList.add("form-label-error");
+            document.getElementById("dom-input3").classList.add("form-input-error");
+            document.getElementById("text-error3").style.display= "block";
+            setTimeout(()=>{
+                document.getElementById("text-error3").style.display= "none";
+            }, 2000)
+            error += 1;
+        }
+
+        if (error > 0){
+            return false
+        }
+        else{
+            return true
+        }
+  
+        
+    }
+    
+
+    function detail(e){
+        e = e || window.event;
+        e.target.querySelector("img").style.display = "block";
+    }
+    function change(e){
+        e = e || window.event;
+        e.target.querySelector("img").style.display = "none";
+    }
+
+
+    $(".form-input").on('focusin', function(){
+        $(this).parent().find('.form-label').addClass('active-bar');
+    })
+    $(".form-input").on('focusout', function(){
+       if(!this.value){
+        $(this).parent().find('.form-label').removeClass('active-bar');
+       } 
+    })
+      </script>
+    </body>
+</html>
